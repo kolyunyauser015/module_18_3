@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def task3_platform(request):
-   return render(request, 'third_task/platform.html')
+   return render(request, 'thrid_task/platform.html')
 
 
 def task3_games(request):
@@ -23,7 +23,7 @@ def task3_games(request):
       'text_4': text_4,
       'button_text': button_text
               }
-   return render(request, 'third_task/games.html', context)
+   return render(request, 'thrid_task/games.html', context)
 
 def task3_cart(request):
    title = 'cart'
@@ -34,4 +34,4 @@ def task3_cart(request):
       'text': text,
       'text_1': text_1
               }
-   return render(request, 'third_task/cart.html', context)
+   return render(request, 'thrid_task/cart.html', context)
