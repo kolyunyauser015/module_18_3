@@ -7,14 +7,14 @@ def task3_platform(request):
 
 
 def task3_games(request):
-   title = 'games'
-   text = 'Игры'
-   text_1 = 'Antjmic Heart'
-   text_2 = 'Cyberpunk 2077'
-   text_3 = 'PayDay 2'
-   text_4 = 'Вернуться обратно'
-   button_text = 'Купить'
-   context = {
+    title = 'games'
+    text = 'Игры'
+    text_1 = 'Antjmic Heart'
+    text_2 = 'Cyberpunk 2077'
+    text_3 = 'PayDay 2'
+    text_4 = 'Вернуться обратно'
+    button_text = 'Купить'
+    context = {
       'title': title,
       'text': text,
       'text_1': text_1,
@@ -23,15 +23,15 @@ def task3_games(request):
       'text_4': text_4,
       'button_text': button_text
               }
-   return render(request, 'thrid_task/games.html', context)
+    return render(request, 'thrid_task/games.html', context)
 
 def task3_cart(request):
-   title = 'cart'
-   text = 'Извините, Ваша корзина пуста'
-   text_1 = 'Вернуться обратно'
-   context = {
+    title = 'cart'
+    text = 'Извините, Ваша корзина пуста'
+    text_1 = 'Вернуться обратно'
+    context = {
       'title': title,
       'text': text,
       'text_1': text_1
               }
-   return render(request, 'thrid_task/cart.html', context)
+    return render(request, 'thrid_task/cart.html', context)
